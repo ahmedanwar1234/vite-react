@@ -1,0 +1,134 @@
+.header{
+    position: relative;
+    color: var(--color-gray-100);
+    height: 25rem;
+    border-bottom: solid white 1px;
+}
+
+.header__container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+}
+.header__container-bg img{
+position: absolute;
+height: 25rem;
+width: 100%;
+
+}
+
+
+.header__container::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,30%);
+
+}
+
+.header_content{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+text-align: center;}
+
+.header_content h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+.header_content >p{
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+/* sections */
+
+.about__section-image{
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.about__section-content{
+    color: var(--color-gray-100);
+
+}
+
+.about__section-content h1{
+    font-size: 2.7rem;
+    font-weight: bold;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.about__section-content p{
+    margin-bottom: 1rem;
+color: var(--color-gray-200);
+}
+
+.about__story-container,.mission__story-container{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+    margin: 5rem 0;
+    align-items: center;
+}
+
+.about__vision-container{
+    
+    display: grid;
+    grid-template-columns: 50% 40%;
+    gap: 10%;
+    align-items: center;
+    margin-top: 5rem;
+    color: var(--color-gray-100);
+}
+.about__vision-container h1{
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.about__vision-container p{
+    color: var(--color-gray-200);
+}
+@media (max-width:600px) {
+    .about__story-container,.mission__story-container{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        background: var(--color-gray-500);
+        border-radius: 2rem;
+        
+    }
+    .about__vision-container{
+        grid-template-columns: 1fr;
+        background: var(--color-gray-500);
+        border-radius: 2rem;
+        
+    }
+    .about__mission{
+        margin-top: 2rem;
+    }
+    .about__section-image{
+        border-radius:1rem ;
+    }
+    .about__story,.about__mission,.about__vision{
+        width: 90%;
+        margin-inline:auto ;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .about__section-image img{
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+}

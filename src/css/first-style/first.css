@@ -1,0 +1,80 @@
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav> a{
+    font-size: 30px;
+font-weight: bold;
+
+}
+ul a{
+font-size: 23px;
+margin-left: 30px;
+}
+.app{
+    padding:20px 20%
+;background-image: url("https://jamesweberstudio.files.wordpress.com/2010/10/smokies_0233b.jpg?w=768");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+
+}
+
+.nav button{
+    font-size: 23px;
+    border:solid 4px white;
+    padding: 5px 20px;
+border-radius: 10px;
+
+}
+.form{
+color:white;
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 400px;
+color: black;
+background-color: white;
+border-radius: 10px;
+padding: 30px 20px;
+
+}
+.form h1{
+font-size: 27px;
+font-weight: bold;
+}
+.form input{
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}.form button{
+    background-color: blueviolet;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 7px;
+    font-size: 25px;
+    margin:5px 20px 20px 5px;
+
+}
+.form div{
+    display:flex;
+    justify-content: space-between;
+    margin:15px 15px ;
+}
+.form div p{
+    color:blueviolet;
+}
+.form p span{
+    color: blueviolet;
+    font-size: 20px;
+    cursor: pointer;
+}

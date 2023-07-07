@@ -1,0 +1,29 @@
+
+@media (max-width:777px) {
+    .a{
+      background-color:white;
+      align-items:center;
+      justify-content:center;
+      transition: 0.2s;
+      
+      
+    }.a li{
+        margin-bottom:15px;
+        transition: 0.2s;
+    }
+    .a li:hover{
+      font-size: 30px;
+
+    }.divv{
+      
+      padding: 20px;
+      padding-bottom: 25px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+position: absolute;
+top: 27px;
+right: 40px;
+    }
+  
+  }
