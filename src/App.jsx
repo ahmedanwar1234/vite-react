@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import { Landing } from './components/Landing'
-import First from './css/first-style/first'
+
 // import Browser Router
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 //imported pages
@@ -19,7 +17,6 @@ import { Footer } from './Components-For-pages/Footer'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter className=''>
