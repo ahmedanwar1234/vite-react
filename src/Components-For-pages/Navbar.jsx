@@ -9,13 +9,13 @@ import { FiAlignRight } from "react-icons/fi";
 import{MdOutlineClose}from'react-icons/md'
 export default function Navbar() {
     const [link,setLink]=useState(false)
-
-
+console.log(link);
   return (
-    <div><nav>
+    <div className='z-50  '><nav>
+     
 <div className="container nav__container">
 <Link onClick={()=>{setLink(true)}} className='logo' to="/"><img src={Logo} alt="Nav Logo" /></Link>
-<ul className={`nav__links  transform duration-300 ${link&&"my_hidden"} z-10`} >
+<ul className={`nav__links    transform duration-300 max-md:${link?"hidden":"flex"} z-50`} >
     {links.map(({name,path},index)=>{
        return <li key={index}>
             <NavLink onClick={()=>{setLink(!link)}} className={({isActive})=>isActive?"active-nav":''} to={path}>{name}</NavLink>
@@ -23,7 +23,7 @@ export default function Navbar() {
     })}
 
 </ul>
-<button onClick={()=>setLink(!link)} className='nav__toggle'>
+<button onClick={()=>setLink(!link)} className='nav__toggle z-50'>
    
     {!link?<MdOutlineClose/>:<FiAlignRight/>}
 </button>
