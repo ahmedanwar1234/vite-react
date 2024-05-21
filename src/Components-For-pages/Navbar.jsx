@@ -15,7 +15,7 @@ console.log(link);
      
 <div className="container nav__container">
 <Link onClick={()=>{setLink(true)}} className='logo' to="/"><img src={Logo} alt="Nav Logo" /></Link>
-<ul className={`nav__links    transform duration-300 max-md:${link?"hidden":"flex"} z-50`} >
+<ul className={`nav__links xl:flex  transform duration-300  ${link&&"hidden"} z-50`} >
     {links.map(({name,path},index)=>{
        return <li key={index}>
             <NavLink onClick={()=>{setLink(!link)}} className={({isActive})=>isActive?"active-nav":''} to={path}>{name}</NavLink>
